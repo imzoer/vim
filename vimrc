@@ -17,6 +17,7 @@ Bundle 'yonchu/accelerated-smooth-scroll'
 Bundle 'ctrlp.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'taglist.vim'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (ie. when working on your own plugin)
@@ -48,6 +49,12 @@ let g:mapleader = "."
 " Fast saving
 nmap <leader>w :w!<cr>
 nmap <leader>q :q<cr>
+
+"taglist config
+nmap <C-t> :TlistToggle<CR>
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
+let Tlist_Show_One_File=1
 
 "default show line number
 set number
