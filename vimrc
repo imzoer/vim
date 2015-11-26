@@ -13,6 +13,8 @@ Bundle 'gmarik/vundle'
 " original repos on github------------------------------------------------
 Bundle 'scrooloose/nerdtree'
 Bundle 'yonchu/accelerated-smooth-scroll'
+Bundle 'tpope/vim-surround'
+Bundle 'terryma/vim-multiple-cursors'
 " vim-scripts repos
 Bundle 'ctrlp.vim'
 Bundle 'L9'
@@ -55,6 +57,12 @@ nmap <C-t> :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 let Tlist_Show_One_File=1
+
+"multi-cursor config
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 
 "default show line number
 set number
